@@ -3,6 +3,7 @@ import { Search, Wallet, QrCode, Plus, ArrowUpRight, Bike, Car, Utensils, Packag
 import { Input } from "@/components/ui/input";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import BottomNav from "@/components/BottomNav";
+import logo from "../assets/logo.png";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -25,7 +26,7 @@ export default function Home() {
         {/* Logo */}
         <div className="flex items-center justify-center mb-6">
           <img 
-            src="/logo.png" 
+            src={logo} 
             alt="Translink Logo" 
             className="h-20 object-contain"
           />

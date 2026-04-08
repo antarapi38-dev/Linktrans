@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { MapPin, Wallet, Route, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import mapImg from "../assets/map.png";
 
 export default function Ongoing() {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ export default function Ongoing() {
       <div className="relative overflow-hidden flex items-center justify-center bg-gray-200 h-[55vh]">
         {/* Map Image */}
         <img 
-          src="/map.png" 
+          src={mapImg} 
           alt="Map Route" 
           className="absolute inset-0 w-full h-full object-cover"
           referrerPolicy="no-referrer"
