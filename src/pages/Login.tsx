@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import logo from "../assets/logo.png";
+import { logoBase64 } from "../assets/images";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -22,7 +22,7 @@ export default function Login() {
       <div className="w-full max-w-sm space-y-8">
         <div className="flex flex-col items-center text-center space-y-2">
           <img 
-            src={logo} 
+            src={logoBase64} 
             alt="Translink Logo" 
             className="h-24 object-contain mb-2"
           />

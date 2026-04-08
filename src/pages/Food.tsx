@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { ArrowLeft, Search, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import lawsonImg from "../assets/lawson.png";
+import { lawsonBase64 } from "../assets/images";
 
 export default function Food() {
   const navigate = useNavigate();
@@ -43,7 +43,7 @@ export default function Food() {
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Logo_Indomaret.png" alt="Indomaret" className="h-8 object-contain" />
           </div>
           <div onClick={handleContinue} className="cursor-pointer min-w-[100px] h-20 bg-white p-3 rounded-xl shadow-sm flex flex-col items-center justify-center border border-gray-100 hover:border-red-200 transition-colors">
-            <img src={lawsonImg} alt="Lawson" className="h-8 object-contain" />
+            <img src={lawsonBase64} alt="Lawson" className="h-8 object-contain" />
           </div>
         </div>
 
